@@ -12,7 +12,7 @@ pipeline{
         stage('Put the code in apache server'){
             steps{
                 
-                sh 'mv /var/lib/jenkins/workspace/GitPipeline/* /var/www/html/'
+                sh 'sudo mv /var/lib/jenkins/workspace/GitPipeline/* /var/www/html/'
             }
         }
     }
