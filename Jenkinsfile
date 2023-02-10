@@ -1,16 +1,11 @@
 pipeline{
-
     agent any
-
+   
     stages{
-        stage("Fetch code from Githun"){
+        stage('Fetch code'){
             steps{
-            git branch: 'master'; url: 'https://github.com/ss-das/mygit.git'
+                git branch: 'master', url:'https://github.com/ss-das/mygit.git'
+
             }
 
         }
-    
-    }
-
-
-}
