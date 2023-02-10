@@ -9,5 +9,10 @@ pipeline{
             }
 
         }
+        stage('Put the code in apache server'){
+            steps{
+                sh 'mv workspace/* /var/www/html/'
+            }
+        }
     }
 }
