@@ -6,7 +6,7 @@ pipeline{
 
     stages{
         stage("Fetch code from Githun"){
-            git branch: 'mater' url: 'https://github.com/ss-das/mygit.git'
+            git branch: 'mater'; url: 'https://github.com/ss-das/mygit.git'
 
         }
 
