@@ -9,17 +9,6 @@ pipeline{
             }
 
         }
-
-        stage("Deploy code to server"){
-            steps{
-
-            sh "mv /workspace/* /var/www/html/"
-            }
-        }
-
-        post{
-            echo "Sucessfully deployed"
-        }
     
     }
 
